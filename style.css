@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&display=swap');
+
+
+:root{
+	--color-bg: #e5e5e5;
+	--color-accent: #52796f;
+	--color-typo: #2E2F2F;
+
+	/*	TYPOGRAPHY */
+	--font-accent: 'Abril Fatface', cursive;
+	--main-font: 'Abel', sans-serif;
+}
+
+*{
+
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: var(--main-font);
+	background: var(--color-bg);
+	color: var(--color-typo);
+	font-size: 1.65rem;
+	margin: 1.5rem;
+}
+
+.logo{
+	font-size: 3rem;
+	font-family: var(--font-accent);
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	color: var(--color-accent);
+}
+
+.accent__text{
+	font-family: var(--font-accent);
+	color: var(--color-accent);
+}
+
+.highlight{
+	color: var(--color-accent);
+	font-weight: 600;
+
+}
+
+.branding{
+	padding: 12px 0px 12px 0px;
+}
+
+.branding div {
+	display: flex;
+	gap: 1em;
+	justify-content: flex-start;
+}
+
+.branding div span{
+	margin: auto;
+	font-size: 2.59rem;
+	font-family: var(--font-accent);
+	
+}
+
+.branding div img{
+	max-width: 80%;
+/*	width: ;*/
+	height: auto;
+	border: 1px;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.button{
+	display: inline-block;
+	font-family: var(--font-accent);
+	background: var(--color-accent);
+	color: var(--color-bg);
+	text-decoration: none;
+	padding: 12px;
+	border: 2px;
+	border-radius: 6px;
+	margin: 0 auto;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.desc__tiles{
+	margin: 2rem;
+	width: 100%;
+}
+
+.tile{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	justify-content: center;
+	align-content: space-around;
+	width: 100%;
+	align-items: center;
+
+	padding: 12px 0;
+}
+.tile img{
+	max-width: 125px;
+	width: 80%;
+	height: auto;
+	border: 2px ;
+	border-radius: 3px;
+/*	display: block;*/
+/*	justify-content: center;*/
+}
+
+.footer{
+	color: var(--color-accent);
+	
+	font-size: 1rem;
+}
+
+.footer p{
+	text-align: justify;
+	color: var(--color-typo);
+	margin: 0 3rem;
+}
+
+.socials{
+	display: flex;
+	justify-content: center;
+	padding: 12px 0;
+	font-size: 2.2rem;
+}
+
+.socials i{
+	padding: 0px 24px;
+}
+
+
+.color1{
+	color: var(--color-accent);
+}
+
+.menu__hide{
+	display: none;
+}
+
+.menu__show{
+	display: block;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.menu__hide{
+		display: block;
+
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+	}
+
+	nav ul{
+		margin: auto 0;
+		color: var(--color-accent);
+		font-weight: 600;
+		font-size: 1.2rem;
+	}
+
+	nav ul li{
+		text-decoration: none;
+		display: inline;
+		padding: 8px 12px;
+	}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	nav ul{
+		font-size: 1.8rem;
+	}
+
+	.branding div {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.tile{
+		display: flex;
+		align-content: space-around;
+	}
+
+	.menu__hide{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		font-size: 2rem;
+	}
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
